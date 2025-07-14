@@ -1,0 +1,645 @@
+/* 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+
+:root {
+  --color-background: #ffffee;
+  --color-navbar: #15204e;
+  --color-card: #fdf3dc;
+  --color-text-primary: #4a3a1a;
+  --color-text-secondary: #73613f;
+  --color-text-tertiary: #9b8764;
+  --color-accent: #b3890a;
+  --color-tecn: #fcf7e8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #001058;
+    --color-card: #091e6a;
+    --color-text-primary: #CCD6F6;
+    --color-text-secondary: #8892B0;
+    --color-text-tertiary: #99a2bc;
+    --color-accent: #a07907;
+    --color-tecn: #b3890a;
+
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+html {
+  overflow: auto !important;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: auto !important;
+
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-text-primary);
+}
+
+button {
+  background: transparent;
+  border-radius: 5px;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-accent);
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: var(--color-accent);  
+  font-size: 2rem;
+}
+
+.fondo-principal {
+  background-image: url('/img/fondoPrincipal1.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.fondo-news {
+  background-image: url('/img/fondoNews.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.legal-services-page {
+  background-image: url('/img/serviciosImg.avif');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.legal-services-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/img/serviciosImg.avif');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.historia-section {
+  background-image: url('/img/historiaImg.webp');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.social-link p {
+  transition: color 0.3s ease;
+}
+
+.social-link:hover p {
+  color: #FF6347;
+}
+
+ */
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Swiper styles */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+/* slick-carousel styles */
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+/* 🎨 Definición de variables de color */
+:root {
+  --color-background: #f2f2f2;
+  --color-header: #1a2a6c; /* Azul marino */
+  --color-section: #1a2a6c; /* Azul marino para secciones específicas */
+  --color-text-primary: #121631;
+  --color-text-secondary: #454545;
+  --color-text-tertiary: #707070;
+  --color-border: #9c9c9c;
+  --color-fondoImg: #121631;
+  --color-footer: #0c0f21;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #060710;
+    --color-header: #030a2f; /* Azul oscuro para dark mode */
+    --color-section: #121631;
+    --color-text-primary: #f2f2f2;
+    --color-text-secondary: #c7c7c7;
+    --color-text-tertiary: #9c9c9c;
+    --color-border: #707070;
+    --color-fondoImg: #181d42;
+    --color-footer: #000000;
+  }
+}
+
+
+
+/* 📜 Estilos Globales */
+html {
+  scroll-behavior: smooth;
+  overflow: auto !important;
+}
+
+body {
+  color: var(--color-text-primary);
+  background: var(--color-background);
+  font-family: 'Arial', Helvetica, sans-serif;
+  margin: 0;
+  overflow: auto !important;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-text-secondary);
+}
+
+/* 📌 Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-header); /* Azul marino */
+  background-opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+.header.fixed {
+  position: fixed;
+  background-color: var(--color-header); /* Azul marino */
+  opacity: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+/* 📌 Secciones */
+.section {
+  padding: 50px 0;
+}
+
+#equipo {
+  background-color: #181d42;
+}
+
+#testimonios {
+  background-color: #181d42;
+}
+
+
+.section.dark {
+  background-color: var(--color-section); /* Azul marino para secciones */
+  color: var(--color-text-secondary);
+}
+
+/* 📌 Botones */
+
+.button-default {
+  background: transparent;
+  border: 2px solid var(--color-border);
+  border-radius: 5px;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.button-default:hover {
+  background-color: var(--color-header); /* Azul marino */
+  color: var(--color-background);
+  transform: scale(1.05);
+}
+
+.button-default:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-border);
+}
+
+/* 📌 Swiper (carrusel) */
+.swiper-button-next, .swiper-button-prev {
+  color: var(--color-text-tertiary);
+  font-size: 2rem;
+}
+
+/* 📌 Fondos */
+.fondo-principal {
+  background-image: url('/img/fondoPrincipal1.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.fondo-info {
+  background-image: url('/img/info.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.fondo-info::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-fondoImg); /* Azul con 70% de opacidad */
+  opacity: 0.7
+}
+
+
+.fondo-news {
+  background-image: url('/img/fondoNews.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.legal-services-page {
+  background-image: url('/img/serviciosImg.avif');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.legal-services-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/img/serviciosImg.avif');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.historia-section {
+  background-image: url('/img/historiaImg.webp');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.servicios-encabezado {
+  background-image: url('/img/encabezadoServ3.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 📌 Flechas personalizadas */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 📌 Social links */
+.social-link p {
+  transition: color 0.3s ease;
+}
+
+.social-link:hover p {
+  color: #FF6347;
+}
+
+
+
+.popover-button {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  font-weight: bold !important;
+  transition: color 0.3s ease !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.popover-button:hover {
+  /* color: var(--color-header) !important; */
+  color: var(--color-text-tertiary) !important;
+
+}
+
+/* Desplegar automáticamente los menús al pasar el cursor */
+/* .popover:hover .popover-panel {
+  display: block !important;
+} */
+
+/* 📌 Servicios Jurídicos - Estilos de la galería */
+.galeria-servicios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cuatro imágenes por fila */
+  gap: 10px; /* Menos espacio entre imágenes */
+  justify-content: center;
+  align-items: center;
+}
+
+.card-servicio {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* border-radius: 10px; */
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagen-servicio {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  /* border-radius: 10px; */
+}
+
+/* 📌 Capa de opacidad azul */
+.overlay-servicio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 26, 78, 0.6); /* Azul con opacidad */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  opacity: 1; /* Siempre visible */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.titulo-servicio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* 📌 Botón "Ver Más" oculto hasta pasar el cursor */
+.boton-ver-mas {
+  padding: 8px 16px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.card-servicio:hover {
+  transform: scale(1.05);
+}
+
+.card-servicio:hover .boton-ver-mas {
+  opacity: 1;
+}
+
+.boton-ver-mas:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* 📌 Responsive */
+@media (max-width: 1024px) {
+  .galeria-servicios {
+    grid-template-columns: repeat(3, 1fr); /* 3 imágenes por fila en tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .galeria-servicios {
+    grid-template-columns: repeat(2, 1fr); /* 2 imágenes por fila en móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-servicios {
+    grid-template-columns: repeat(1, 1fr); /* 1 imagen por fila en pantallas pequeñas */
+  }
+}
+
+
+.equipo-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* .titulo-equipo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #7e7070;
+  margin-bottom: 1rem;
+} */
+
+/* .descripcion {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.5;
+} */
+
+
+
+
+/* Grid de tarjetas */
+.equipo-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+/* Tarjeta */
+.card {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  /* border-radius: 10px; */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  /* border-radius: 2px; */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen */
+.imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .imagen {
+  filter: blur(3px) brightness(50%);
+}
+
+/* Nombre del abogado */
+.nombre {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(2, 34, 96, 0.7);
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Botón "Ver Perfil" */
+.ver-perfil {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.card:hover .ver-perfil {
+  opacity: 1;
+}
+
+.ver-perfil:hover {
+  background-color: rgba(28, 28, 95, 0.9);
+}
+
+
+/* seccion testimonios */
+
+.testimonios-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* .testimonios-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap; 
+} */
+
+.titulo-testimonios {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fffefe;
+  margin-bottom: 1rem;
+}
+
+.descripcion-testimonios {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.5;
+}
+
+
+.testimonios-section {
+  background-image: url('/img/fondoTestimonios2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}

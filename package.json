@@ -1,0 +1,39 @@
+{
+  "name": "corpjuridico-agya",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "aos": "^2.3.4",
+    "axios": "^1.8.4",
+    "bcrypt": "^5.1.1",
+    "clsx": "^2.1.1",
+    "formidable": "^3.5.2",
+    "framer-motion": "^12.4.10",
+    "jsonwebtoken": "^9.0.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "mysql2": "^3.14.0",
+    "next": "15.0.4",
+    "next-auth": "^4.24.11",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "react-icons": "^5.4.0",
+    "react-slick": "^0.30.3",
+    "sequelize": "^6.37.6",
+    "sequelize-cli": "^6.6.2",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.15"
+  },
+  "devDependencies": {
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
