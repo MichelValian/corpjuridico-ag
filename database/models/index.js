@@ -131,7 +131,7 @@ if (env === 'production') {
     dialectModule: mysql2,
     dialectOptions: {
       ssl: {
-        ca: process.env.MYSQL_CA,
+        ca: process.env.MYSQL_CA?.replace(/\\n/g, '\n'),
       },
     },
     logging: false,
