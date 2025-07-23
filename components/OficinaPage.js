@@ -81,32 +81,44 @@ const OficinaSection = () => {
          </div>
 
 
-      <h2 className="text-2xl lg:text-3xl font-medium tracking-tight text-gray-950 font-bold text-center mt-20 mb-4" data-aos="fade-up">OFICINA</h2>
+         <h2 className="text-2xl lg:text-3xl font-medium tracking-tight text-gray-950 font-bold text-center mt-20 mb-4" data-aos="fade-up">OFICINAS</h2>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto bg-gray-50 p-6 shadow-lg">
-        {/* Columna de información */}
-        <div className="flex flex-col justify-center space-y-4" data-aos="fade-left">
-          <h3 className="text-xl font-semibold">{office.city}</h3>
-          <p className="text-sm">{office.address}</p>
-          <p className="text-sm flex justify-center items-center gap-2">
-            <FaPhone className="text-indigo-900" /> {office.phone}
-          </p>
-        </div>
+         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Oficina 1 */}
+            <div className="bg-gray-50 p-6 shadow-lg space-y-4" data-aos="fade-up">
+               <h3 className="text-xl font-semibold">IZÚCAR DE MATAMOROS</h3>
+               <p className="text-sm">Reforma 20, Centro, 74400 Izúcar de Matamoros, Puebla.</p>
+               <p className="text-sm flex items-center gap-2">
+                  <FaPhone className="text-indigo-900" /> 243 1067799
+               </p>
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7562.87008631319!2d-98.46860261348235!3d18.599492248563404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cf0013e0809395%3A0x9552f1f71bb61350!2sReforma%2020%2C%20Centro%2C%2074400%20Iz%C3%BAcar%20de%20Matamoros%2C%20Pue.!5e0!3m2!1ses!2smx!4v1739553596247!5m2!1ses!2smx"
+                  width="100%"
+                  height="250"
+                  className="shadow-lg"
+                  allowFullScreen=""
+                  loading="lazy"
+               ></iframe>
+            </div>
 
-        {/* Columna del mapa */}
-        <div className="overflow-hidden">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7562.87008631319!2d-98.46860261348235!3d18.599492248563404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cf0013e0809395%3A0x9552f1f71bb61350!2sReforma%2020%2C%20Centro%2C%2074400%20Iz%C3%BAcar%20de%20Matamoros%2C%20Pue.!5e0!3m2!1ses!2smx!4v1739553596247!5m2!1ses!2smx"
-            allow="accelerometer; gyroscope; magnetometer"
-            width="100%"
-            height="300"
-            className="shadow-lg transition-opacity "
-            allowFullScreen=""
-            loading="lazy"
-            data-aos="fade-right"
-          ></iframe>
-        </div>
-      </div>
+            {/* Oficina 2 */}
+            <div className="bg-gray-50 p-6 shadow-lg space-y-4" data-aos="fade-up" data-aos-delay="100">
+               <h3 className="text-xl font-semibold">PUEBLA</h3>
+               <p className="text-sm">Vicente Guerrero No. 108, San Bernardino Tlaxcalancingo, Puebla.</p>
+               <p className="text-sm flex items-center gap-2">
+                  <FaPhone className="text-indigo-900" /> 243 1067799
+               </p>
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.8392384379354!2d-98.28099992618495!3d19.026804353517868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7bd79fd96df%3A0x205508eeaa3b5eb!2sV.%20Guerrero%20108%2C%20San%20Bernardino%20Tlaxcalancingo%2C%2072821%20San%20Bernardino%20Tlaxcalancingo%2C%20Pue.!5e0!3m2!1ses!2smx!4v1753292679996!5m2!1ses!2smx"
+                  width="100%"
+                  height="250"
+                  className="shadow-lg"
+                  allowFullScreen=""
+                  loading="lazy"
+               ></iframe>
+            </div>
+         </div>
+
       </section>
    );
 };
