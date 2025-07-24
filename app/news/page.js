@@ -24,6 +24,7 @@ const News = () => {
   const { data: session, status } = useSession();
   const isAdmin = session?.user?.role === "admin";
 
+  // const [search, setSearch] = useState("");
   const [news, setNews] = useState([]);
   const [error, setError] = useState("");
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
@@ -113,6 +114,12 @@ const News = () => {
     setCurrentNews(noticia); // Establecer el usuario a editar
     setIsDeleteModalOpen(true); // Abrir el modal de edición
   };
+
+  // const filteredNews = Array.isArray(news)
+  // ? news.filter((noticia) =>
+  //     `${noticia.name} ${noticia.lastName}`.toLowerCase().includes(search.toLowerCase())
+  //   )
+  // : [];
   
   useEffect(() => {
     AOS.init({ duration: 1000, once: true, easing: "ease-out" });
@@ -187,6 +194,13 @@ const News = () => {
               <h2 className="text-xl lg:text-2xl font-medium tracking-tight text-gray-600">
                 ÚLTIMAS NOVEDADES
               </h2>
+               {/* <input
+                  type="text"
+                  placeholder="Buscar por nombre"
+                  className="w-2/3 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                /> */}
               {isAdmin && (
                 <button 
                   className="flex items-center gap-3 bg-blue-950 text-white text-sm sm:text-md px-4 py-2 rounded-sm hover:bg-blue-900 hover:text-white"

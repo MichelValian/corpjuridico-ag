@@ -829,11 +829,11 @@ export default function PerfilAbogado() {
               </div>
             ) : (
               <div className="flex flex-col gap-2">
-                <input value={editedInfo.name} onChange={(e) => setEditedInfo({ ...editedInfo, name: e.target.value })} className="border p-1 rounded" />
-                <input value={editedInfo.lastName} onChange={(e) => setEditedInfo({ ...editedInfo, lastName: e.target.value })} className="border p-1 rounded" />
-                <input value={editedInfo.specialty} onChange={(e) => setEditedInfo({ ...editedInfo, specialty: e.target.value })} className="border p-1 rounded" />
-                <input value={editedInfo.email} onChange={(e) => setEditedInfo({ ...editedInfo, email: e.target.value })} className="border p-1 rounded" />
-                <input value={editedInfo.phone} onChange={(e) => setEditedInfo({ ...editedInfo, phone: e.target.value })} className="border p-1 rounded" />
+                <input placeholder="Nombre" value={editedInfo.name} onChange={(e) => setEditedInfo({ ...editedInfo, name: e.target.value })} className="border p-1 rounded" />
+                <input placeholder="Apellidos" value={editedInfo.lastName} onChange={(e) => setEditedInfo({ ...editedInfo, lastName: e.target.value })} className="border p-1 rounded" />
+                <input placeholder="Especialidad" value={editedInfo.specialty} onChange={(e) => setEditedInfo({ ...editedInfo, specialty: e.target.value })} className="border p-1 rounded" />
+                <input placeholder="Correo electrónico" value={editedInfo.email} onChange={(e) => setEditedInfo({ ...editedInfo, email: e.target.value })} className="border p-1 rounded" />
+                <input placeholder="Teléfono" value={editedInfo.phone} onChange={(e) => setEditedInfo({ ...editedInfo, phone: e.target.value })} className="border p-1 rounded" />
                 <div className="flex gap-2 mt-2">
                   <button className="bg-blue-900 text-white px-3 py-1 rounded" onClick={actualizarInfo}>Guardar</button>
                   <button className="border px-3 py-1 rounded" onClick={() => setEditInfo(false)}>Cancelar</button>

@@ -72,7 +72,7 @@ const OficinaSection = () => {
                   className="button-whatsapp bg-gray-200 text-indigo-900 hover:bg-gray-300 shadow-lg font-bold py-3 px-6 flex items-center justify-center space-x-2 transition-transform transform hover:scale-110"
                   data-aos="fade-up"
                   data-aos-delay="400"
-                  onClick={() => window.open("https://wa.me/522431067799?text=Hola%20quisiera%20más%20información", "_blank")}
+                  onClick={() => window.open("https://wa.me/5212215851346?text=Hola,%20quisiera%20más%20información", "_blank")}
                >
                <FaWhatsapp className="text-xl" /> 
                   <span>Enviar mensaje</span>
@@ -89,7 +89,10 @@ const OficinaSection = () => {
                <h3 className="text-xl font-semibold">IZÚCAR DE MATAMOROS</h3>
                <p className="text-sm">Reforma 20, Centro, 74400 Izúcar de Matamoros, Puebla.</p>
                <p className="text-sm flex items-center gap-2">
-                  <FaPhone className="text-indigo-900" /> 243 1067799
+                  <a href="tel:2215851346" className="flex items-center gap-2 text-indigo-900 hover:underline">
+                     <FaPhone className="text-indigo-900" />
+                        221 585 1346
+                  </a>
                </p>
                <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7562.87008631319!2d-98.46860261348235!3d18.599492248563404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cf0013e0809395%3A0x9552f1f71bb61350!2sReforma%2020%2C%20Centro%2C%2074400%20Iz%C3%BAcar%20de%20Matamoros%2C%20Pue.!5e0!3m2!1ses!2smx!4v1739553596247!5m2!1ses!2smx"
@@ -106,7 +109,10 @@ const OficinaSection = () => {
                <h3 className="text-xl font-semibold">PUEBLA</h3>
                <p className="text-sm">Vicente Guerrero No. 108, San Bernardino Tlaxcalancingo, Puebla.</p>
                <p className="text-sm flex items-center gap-2">
-                  <FaPhone className="text-indigo-900" /> 243 1067799
+                  <a href="tel:2215851346" className="flex items-center gap-2 text-indigo-900 hover:underline">
+                     <FaPhone className="text-indigo-900" />
+                        221 585 1346
+                  </a>
                </p>
                <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.8392384379354!2d-98.28099992618495!3d19.026804353517868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7bd79fd96df%3A0x205508eeaa3b5eb!2sV.%20Guerrero%20108%2C%20San%20Bernardino%20Tlaxcalancingo%2C%2072821%20San%20Bernardino%20Tlaxcalancingo%2C%20Pue.!5e0!3m2!1ses!2smx!4v1753292679996!5m2!1ses!2smx"

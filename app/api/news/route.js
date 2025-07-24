@@ -31,6 +31,14 @@ export async function GET(req) {
       };
     }
 
+    // if (date) {
+    //   whereCondition = {
+    //     [Op.or]: [
+    //       { date: { [Op.like]: `%${date}%` } },
+    //     ]
+    //   };
+    // }
+
     const noticias = await db.News.findAll({
       where: whereCondition,
       include: {
