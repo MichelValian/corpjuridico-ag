@@ -840,10 +840,11 @@ export default function PerfilAbogado() {
                 </div>
               </div>
             )}
+             <div className="pointer-events-none absolute inset-px  ring-1 shadow-sm ring-black/5"></div>
           </div>
 
           {/* Columna central */}
-          <div className="relative bg-white p-10">
+          <div className="relative bg-white p-10 text-justify">
             {/* Experiencia */}
             <div>
               <div className="flex justify-between items-center">
@@ -907,6 +908,7 @@ export default function PerfilAbogado() {
                 </ul>
               )}
             </div>
+              <div className="pointer-events-none absolute inset-px  ring-1 shadow-sm ring-black/5"></div>
           </div>
 
           {/* Columna derecha */}
@@ -921,6 +923,7 @@ export default function PerfilAbogado() {
                 </li>
               ))}
             </ul>
+             <div className="pointer-events-none absolute inset-px  ring-1 shadow-sm ring-black/5"></div>
           </div>
         </div>
       </div>

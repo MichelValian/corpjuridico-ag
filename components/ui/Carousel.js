@@ -61,9 +61,11 @@ export default function Carousel() {
       <Slider {...settings}>
   {[
     { src: "/img/carrusel1.webp", text: "Alvarado Guzmán y Asociados", img2: "/img/logo.png", text2: "Corporativo Jurídico" },
+    { src: "/img/abogados.jpg"},
     { src: "/img/carrusel2.jpg", text: "Asesoría legal estratégica para proteger sus intereses con soluciones efectivas y personalizadas" },
     { src: "/img/IzMt.png", text: "Asesoría legal estratégica para proteger sus intereses con soluciones efectivas y personalizadas", author: "Foto de Gobierno de Puebla" },
     { src: "/img/IzMt2.webp", text: "Asesoría legal estratégica para proteger sus intereses con soluciones efectivas y personalizadas", author: "Foto de Marco Cana"},
+    
   ].map((img, index) => (
     <div key={index} className="relative flex justify-center items-center">
       <img

@@ -72,7 +72,7 @@ const OficinaSection = () => {
                   className="button-whatsapp bg-gray-200 text-indigo-900 hover:bg-gray-300 shadow-lg font-bold py-3 px-6 flex items-center justify-center space-x-2 transition-transform transform hover:scale-110"
                   data-aos="fade-up"
                   data-aos-delay="400"
-                  onClick={() => window.open("https://wa.me/5212215851346?text=Hola,%20quisiera%20más%20información", "_blank")}
+                  onClick={() => window.open("https://wa.me/5212431218853?text=Hola,%20quisiera%20más%20información", "_blank")}
                >
                <FaWhatsapp className="text-xl" /> 
                   <span>Enviar mensaje</span>
@@ -89,9 +89,9 @@ const OficinaSection = () => {
                <h3 className="text-xl font-semibold">IZÚCAR DE MATAMOROS</h3>
                <p className="text-sm">Reforma 20, Centro, 74400 Izúcar de Matamoros, Puebla.</p>
                <p className="text-sm flex items-center gap-2">
-                  <a href="tel:2215851346" className="flex items-center gap-2 text-indigo-900 hover:underline">
+                  <a href="tel:2431218853" className="flex items-center gap-2 text-indigo-900 hover:underline">
                      <FaPhone className="text-indigo-900" />
-                        221 585 1346
+                        243 121 8853
                   </a>
                </p>
                <iframe
@@ -109,9 +109,9 @@ const OficinaSection = () => {
                <h3 className="text-xl font-semibold">PUEBLA</h3>
                <p className="text-sm">Vicente Guerrero No. 108, San Bernardino Tlaxcalancingo, Puebla.</p>
                <p className="text-sm flex items-center gap-2">
-                  <a href="tel:2215851346" className="flex items-center gap-2 text-indigo-900 hover:underline">
+                  <a href="tel:2431218853" className="flex items-center gap-2 text-indigo-900 hover:underline">
                      <FaPhone className="text-indigo-900" />
-                        221 585 1346
+                        243 121 8853
                   </a>
                </p>
                <iframe

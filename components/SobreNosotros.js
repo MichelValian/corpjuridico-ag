@@ -30,9 +30,9 @@ const SobreNosotros = () => {
         <div className="md:w-1/2 w-full" data-aos="fade-left">
         <div className="absolute inset-0 bg-[#121631] opacity-20 z-10"></div>
           <img
-            src="/img/nosotros.jpg"
+            src="/img/abogados.jpg"
             alt="Nuestro equipo"
-            className="w-full h-auto shadow-xl object-cover z-0"
+            className="w-full h-[280px] shadow-xl object-cover z-0"
           />
         </div>
         <div className="md:w-1/2 w-full" data-aos="fade-right" data-aos-delay="400">
