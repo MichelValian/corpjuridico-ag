@@ -83,9 +83,26 @@ const OficinaSection = () => {
 
          <h2 className="text-2xl lg:text-3xl font-medium tracking-tight text-gray-950 font-bold text-center mt-20 mb-4" data-aos="fade-up">OFICINAS</h2>
 
-         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            
+            <div className="bg-gray-50 p-6 space-y-4 text-lg text-blue-900 tracking-wide" data-aos="fade-up">
+               <p >
+                  <strong>Horarios de atención: </strong> lunes a viernes de 09:00 a 16:00 horas.
+               </p>
+
+                <p >
+                  Brindamos asesorías jurídicas de manera presencial, telefónica y virtual mediante Google Meet, con atención previa cita para su mayor comodidad. 
+               </p>
+
+               <p >
+                  Nuestro compromiso es proporcionar soluciones legales integrales, adaptadas a las necesidades específicas de cada cliente, asegurando atención 
+                  personalizada y eficaz en todo momento.
+               </p>
+               
+            </div>
+
             {/* Oficina 1 */}
-            <div className="bg-gray-50 p-6 shadow-lg space-y-4" data-aos="fade-up">
+            <div className="bg-gray-50 p-6  space-y-4" data-aos="fade-up">
                <h3 className="text-xl font-semibold">IZÚCAR DE MATAMOROS</h3>
                <p className="text-sm">Reforma 20, Centro, 74400 Izúcar de Matamoros, Puebla.</p>
                <p className="text-sm flex items-center gap-2">
@@ -105,9 +122,9 @@ const OficinaSection = () => {
             </div>
 
             {/* Oficina 2 */}
-            <div className="bg-gray-50 p-6 shadow-lg space-y-4" data-aos="fade-up" data-aos-delay="100">
-               <h3 className="text-xl font-semibold">PUEBLA</h3>
-               <p className="text-sm">Vicente Guerrero No. 108, San Bernardino Tlaxcalancingo, Puebla.</p>
+            <div className="bg-gray-50 p-6 space-y-4" data-aos="fade-up" data-aos-delay="100">
+               <h3 className="text-xl font-semibold">CIUDAD DE PUEBLA</h3>
+               <p className="text-sm">Plaza Sinfonía, 2da Planta, Local 4 Distrito Sonata, Lomas de Angelópolis, II, Puebla.</p>
                <p className="text-sm flex items-center gap-2">
                   <a href="tel:2431218853" className="flex items-center gap-2 text-indigo-900 hover:underline">
                      <FaPhone className="text-indigo-900" />
@@ -115,7 +132,7 @@ const OficinaSection = () => {
                   </a>
                </p>
                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.8392384379354!2d-98.28099992618495!3d19.026804353517868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7bd79fd96df%3A0x205508eeaa3b5eb!2sV.%20Guerrero%20108%2C%20San%20Bernardino%20Tlaxcalancingo%2C%2072821%20San%20Bernardino%20Tlaxcalancingo%2C%20Pue.!5e0!3m2!1ses!2smx!4v1753292679996!5m2!1ses!2smx"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.5979591741393!2d-98.27809169999999!3d18.993354999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb984aef466ab%3A0xb57e1d0055258469!2sSonata%20CoWork!5e0!3m2!1ses!2smx!4v1756757224269!5m2!1ses!2smx"
                   width="100%"
                   height="250"
                   className="shadow-lg"

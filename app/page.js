@@ -12,6 +12,7 @@ import Noticias from "@/components/Noticias";
 import ServicePage from "@/components/ServicePage";
 import TestimoniosPage from "@/components/TestimoniosPage";
 import OficinaSection from "@/components/OficinaPage";
+import ContactFormSection from "@/components/ContactForm";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -76,6 +77,8 @@ export default function Home() {
         <TestimoniosPage />
 
         <OficinaSection/>
+        
+        <ContactFormSection/>
       
       <div>
         <Footer/>
