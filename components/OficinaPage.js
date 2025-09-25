@@ -72,7 +72,7 @@ const OficinaSection = () => {
                   className="button-whatsapp bg-gray-200 text-indigo-900 hover:bg-gray-300 shadow-lg font-bold py-3 px-6 flex items-center justify-center space-x-2 transition-transform transform hover:scale-110"
                   data-aos="fade-up"
                   data-aos-delay="400"
-                  onClick={() => window.open("https://wa.me/5212431218853?text=Hola,%20quisiera%20más%20información", "_blank")}
+                  onClick={() => window.open("https://wa.me/5212213451169", "_blank")}
                >
                <FaWhatsapp className="text-xl" /> 
                   <span>Enviar mensaje</span>
@@ -83,9 +83,9 @@ const OficinaSection = () => {
 
          <h2 className="text-2xl lg:text-3xl font-medium tracking-tight text-gray-950 font-bold text-center mt-20 mb-4" data-aos="fade-up">OFICINAS</h2>
 
-         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             
-            <div className="bg-gray-50 p-6 space-y-4 text-lg text-blue-900 tracking-wide" data-aos="fade-up">
+            {/* <div className="bg-gray-50 p-6 space-y-4 text-lg text-blue-900 tracking-wide" data-aos="fade-up">
                <p >
                   <strong>Horarios de atención: </strong> lunes a viernes de 09:00 a 16:00 horas.
                </p>
@@ -99,16 +99,16 @@ const OficinaSection = () => {
                   personalizada y eficaz en todo momento.
                </p>
                
-            </div>
+            </div> */}
 
             {/* Oficina 1 */}
             <div className="bg-gray-50 p-6  space-y-4" data-aos="fade-up">
                <h3 className="text-xl font-semibold">IZÚCAR DE MATAMOROS</h3>
                <p className="text-sm">Reforma 20, Centro, 74400 Izúcar de Matamoros, Puebla.</p>
                <p className="text-sm flex items-center gap-2">
-                  <a href="tel:2431218853" className="flex items-center gap-2 text-indigo-900 hover:underline">
+                  <a href="tel:2211963902" className="flex items-center gap-2 text-indigo-900 hover:underline">
                      <FaPhone className="text-indigo-900" />
-                        243 121 8853
+                        221 196 3902
                   </a>
                </p>
                <iframe
@@ -126,9 +126,9 @@ const OficinaSection = () => {
                <h3 className="text-xl font-semibold">CIUDAD DE PUEBLA</h3>
                <p className="text-sm">Plaza Sinfonía, 2da Planta, Local 4 Distrito Sonata, Lomas de Angelópolis, II, Puebla.</p>
                <p className="text-sm flex items-center gap-2">
-                  <a href="tel:2431218853" className="flex items-center gap-2 text-indigo-900 hover:underline">
+                  <a href="tel:2211963902" className="flex items-center gap-2 text-indigo-900 hover:underline">
                      <FaPhone className="text-indigo-900" />
-                        243 121 8853
+                        221 196 3902
                   </a>
                </p>
                <iframe

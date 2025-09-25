@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="col-span-1 sm:col-span-2 md:col-span-1">
             <h3 className="font-bold text-lg">Redes sociales</h3>
             <div className="flex space-x-4 mt-4">
-              <a href="https://wa.me/5212431218853" className="text-gray-500 hover:text-blue-900" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5212213451169" className="text-gray-500 hover:text-blue-900" target="_blank" rel="noopener noreferrer">
                 <IoLogoWhatsapp size={24} />
               </a>
               <a href="mailto:corporativoagyasociados@gmail.com" className="text-gray-500 hover:text-blue-900" target="_blank" rel="noopener noreferrer">
