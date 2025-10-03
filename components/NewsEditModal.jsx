@@ -262,7 +262,7 @@ export default function NewsEditModal({ isOpen, onClose, onSave, noticia }) {
                   onClick={addContentField}
                   className="mt-2 text-sm text-blue-700 hover:underline"
                 >
-                  + Agregar otro trámite
+                  + Agregar otro contenido
                 </button>
               </div>
 
