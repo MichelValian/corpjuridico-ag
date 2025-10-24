@@ -45,7 +45,7 @@ const OficinaSection = () => {
                },
                { 
                   icon: <FaTiktok className="text-indigo-900 text-2xl" />, 
-                  text: "alfonsoalvaradogu",
+                  text: "juridicoagasociados",
                   link: "https://www.tiktok.com/@juridicoagasociados?_t=ZS-8xZ3ley46Gm&_r=1"
                },
                { 
