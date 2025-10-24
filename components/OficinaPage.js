@@ -24,8 +24,8 @@ const OficinaSection = () => {
                // { icon: <FaWhatsapp className="text-green-500 text-3xl" />, text: "+52 123 456 7890" },
                { 
                   icon: <MdEmail className="text-indigo-900 text-2xl" />, 
-                  text: "corporativoagyasociados@gmail.com", 
-                  link: "mailto:corporativoagyasociados@gmail.com"
+                  text: "corpjuridicoagyasociados@gmail.com", 
+                  link: "mailto:corpjuridicoagyasociados@gmail.com"
                },
                // { 
                //    icon: <FaLinkedin className="text-indigo-900 text-2xl" />, 
