@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SessionWrapper from "../components/SessionWrapper";
-import RemoveBodyPadding from "../components/RemoveBodyPadding";  // ajusta ruta si es necesario
+import RemoveBodyPadding from "../components/RemoveBodyPadding";
+import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <RemoveBodyPadding />
         <SessionWrapper>{children}</SessionWrapper>
+        <Analytics />
       </body>
     </html>
   );
